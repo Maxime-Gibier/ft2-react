@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.block {
+	background-color: #0b2748;
+	width: 285px;
+	height: 180px;
+	color: white;
+	border-radius: 40px;
+	overflow: hidden;
+}
+
+.titre {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 15px 15px 10px 15px;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.titre {
+	font-weight: 100;
+}
+
+.power {
+	display: flex;
+}
+
+.power h1 {
+}
+
+.icon {
+}

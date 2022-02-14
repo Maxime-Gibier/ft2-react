@@ -7,11 +7,16 @@ const ActivePower = () => {
 		<div className="block">
 			<div className="titre">
 				<img src={images.power} alt="power" className="icon"></img>
-				<span>
-					<h2>Puissance</h2>
-					<h3>/10 min</h3>
+				<span className="power">
+					<h2>
+						Puissance <small>/10min</small>
+					</h2>
 				</span>
 			</div>
+			<h3>
+				<small>2604.19 w</small>
+			</h3>
+			<img src={images.courbepower}></img>
 		</div>
 	);
 };
