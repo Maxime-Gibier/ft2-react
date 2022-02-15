@@ -6,8 +6,14 @@ import backgroundimage from "./backgroundimage.png";
 import courbepower from "./courbepower.png";
 import courberotor from "./courberotor.png";
 import courbetemp from "./courbetemp.png";
+import alerte from "./Alerte.png";
+import map from "./Eoliennes.png";
+import wind from "./Wind.png";
+import thermo from "./thermo.png";
+import barwind from "./bar_wind.png";
+import bartemp from "./bartemp.png";
 
-export default {
+const images = {
 	power,
 	palle,
 	temp,
@@ -16,4 +22,12 @@ export default {
 	courbepower,
 	courberotor,
 	courbetemp,
+	alerte,
+	map,
+	wind,
+	thermo,
+	barwind,
+	bartemp,
 };
+
+export default images;

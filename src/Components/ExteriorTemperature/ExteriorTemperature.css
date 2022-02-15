@@ -1,0 +1,21 @@
+.temp {
+	display: flex;
+}
+
+.logo_temp {
+	height: 64px;
+	width: 64px;
+	margin: 5px;
+}
+
+.info_temp {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-left: 10px;
+}
+
+.info_temp p {
+	color: var(--color-blue);
+}

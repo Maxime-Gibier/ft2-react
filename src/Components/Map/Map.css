@@ -1,0 +1,30 @@
+.block_map {
+	width: 285px;
+	height: 285px;
+	color: white;
+	border-radius: 40px;
+	overflow: hidden;
+	background-image: url("../../images/backgroundimage.png");
+	mix-blend-mode: screen;
+	background-position: bottom;
+	background-size: 576px 240px;
+	background-repeat: no-repeat;
+}
+
+.titre {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 15px 15px 10px 15px;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.titre {
+	font-weight: 100;
+}
+
+.power {
+	display: flex;
+}

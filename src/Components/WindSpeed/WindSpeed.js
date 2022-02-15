@@ -1,25 +1,18 @@
 import React from "react";
-import "./WindSpeed.css";
 import images from "../../images/images";
+import "./WindSpeed.css";
 
-const windSpeed = () => {
+const WindSpeed = () => {
 	return (
-		<div className="block">
-			<div className="titre">
-				<img src={images.palle} alt="power" className="icon"></img>
-				<span className="power">
-					<h2>
-						Vitesse du rotor
-						<small> /10 min</small>
-					</h2>
-				</span>
+		<div className="wind">
+			<img src={images.wind} alt="wind logo" className="logo_wind"></img>
+			<div className="info_wind">
+				<h3>Vitesse du vent / 10 min</h3>
+				<img src={images.barwind} alt="wind bar"></img>
+				<p>9.2 m/s</p>
 			</div>
-			<h3>
-				50<small> tr/min </small>
-			</h3>
-			<img src={images.courberotor}></img>
 		</div>
 	);
 };
 
-export default windSpeed;
+export default WindSpeed;

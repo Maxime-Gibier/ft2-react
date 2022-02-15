@@ -4,6 +4,10 @@ import NoteManager from "./Components/NoteManager/NoteManager";
 import TurbineTemperature from "./Components/TurbineTemperature/TurbineTemperature";
 import WindSpeed from "./Components/WindSpeed/WindSpeed";
 import images from "./images/images";
+import Alertes from "./Components/Alertes/Alertes";
+import Map from "./Components/Map/Map";
+import RotorSpeed from "./Components/RotorSpeed/RotorSpeed";
+import ExteriorTemperature from "./Components/ExteriorTemperature/ExteriorTemperature";
 
 function App() {
 	return (
@@ -15,19 +19,21 @@ function App() {
 			></img>
 			<img
 				src={images.backgroundimage}
-				alt="Background image"
+				alt="page background"
 				className="backgroundnet"
 			></img>
 			<div className="colone side left">
 				<ActivePower />
-				<WindSpeed />
+				<RotorSpeed />
 				<TurbineTemperature />
+				<Alertes />
 			</div>
-			<div className="colone mid">
-				<h1>C'est un test</h1>
-			</div>
+			<div className="colone mid"></div>
 			<div className="colone side right">
 				<NoteManager />
+				<Map />
+				<WindSpeed />
+				<ExteriorTemperature />
 			</div>
 		</div>
 	);
