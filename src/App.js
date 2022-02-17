@@ -8,6 +8,8 @@ import Alertes from "./Components/Alertes/Alertes";
 import Map from "./Components/Map/Map";
 import RotorSpeed from "./Components/RotorSpeed/RotorSpeed";
 import ExteriorTemperature from "./Components/ExteriorTemperature/ExteriorTemperature";
+import { Canvas } from "@react-three/fiber";
+import Model from "./Components/Model";
 
 function App() {
 	return (
@@ -28,7 +30,11 @@ function App() {
 				<TurbineTemperature />
 				<Alertes />
 			</div>
-			<div className="colone mid"></div>
+			<div className="colone mid">
+				<Canvas className="canv" camera={{ position: [0, 5, 20] }}>
+					<Model />
+				</Canvas>
+			</div>
 			<div className="colone side right">
 				<NoteManager />
 				<Map />

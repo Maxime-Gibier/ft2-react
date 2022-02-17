@@ -24,6 +24,7 @@
 	width: 100vw;
 	height: 60vh;
 	top: 40%;
+	z-index: 0;
 }
 
 .colone {
@@ -48,4 +49,9 @@
 
 .right {
 	align-items: flex-start;
+}
+
+.canv {
+	height: 100vh !important;
+	z-index: 100;
 }

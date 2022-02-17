@@ -10,7 +10,7 @@ const NoteManager = () => {
 					<h2 className="notetitre">Note Manager</h2>
 				</span>
 
-				<span>
+				<span className="notes">
 					<ul>
 						<li>vérifier la surtension</li>
 						<li>vérifier la tension</li>
