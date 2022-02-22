@@ -1,4 +1,3 @@
-import { useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
@@ -7,8 +6,7 @@ import Eolienne from "./Eolienne";
 
 const Model = () => {
 	const ref = useRef();
-	useFrame(() => (ref.current.rotation.y -= 0.02));
-
+	
 	return (
 		<>
 			<mesh ref={ref} position={[0, -10, 0]}>

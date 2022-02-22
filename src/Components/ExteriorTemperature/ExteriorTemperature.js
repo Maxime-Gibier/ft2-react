@@ -1,4 +1,3 @@
-import react from "react";
 import "./ExteriorTemperature.css";
 import images from "../../images/images";
 import BarChartTemp from "../BarChart/BarChartTemp";

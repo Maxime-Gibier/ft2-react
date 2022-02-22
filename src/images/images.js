@@ -12,6 +12,7 @@ import wind from "./Wind.png";
 import thermo from "./thermo.png";
 import barwind from "./bar_wind.png";
 import bartemp from "./bartemp.png";
+import bigpower from "./BigPower.png";
 
 const images = {
 	power,
@@ -28,6 +29,7 @@ const images = {
 	thermo,
 	barwind,
 	bartemp,
+	bigpower,
 };
 
 export default images;

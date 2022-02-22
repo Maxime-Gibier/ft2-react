@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import { select } from "d3-selection";
 
 import "./BarChart.css";
-import d3 from "d3";
-
-var data = [14];
+import data from "../data.json";
 
 const draw_wind = (props) => {
 	data.forEach(function (dta) {
@@ -22,6 +20,13 @@ const draw_wind = (props) => {
 			.attr("rx", 9);
 	});
 };
+
+[
+	{
+		zizi: "25cm",
+		bras: "45cm",
+	},
+];
 
 const BarChartWind = (props) => {
 	useEffect(() => {

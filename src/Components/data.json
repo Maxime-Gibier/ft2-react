@@ -1,0 +1,18 @@
+[
+	{
+		"windspeed": "10",
+		"temperature": "29"
+	},
+	{
+		"windspeed": "7,4",
+		"temperature": "32"
+	},
+	{
+		"windspeed": "13",
+		"temperature": "27"
+	},
+	{
+		"windspeed": "15",
+		"temperature": "35"
+	}
+]

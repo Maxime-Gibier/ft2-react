@@ -1,15 +1,9 @@
 import "./App.css";
-import ActivePower from "./Components/ActivePower/ActivePower";
-import NoteManager from "./Components/NoteManager/NoteManager";
-import TurbineTemperature from "./Components/TurbineTemperature/TurbineTemperature";
-import WindSpeed from "./Components/WindSpeed/WindSpeed";
 import images from "./images/images";
-import Alertes from "./Components/Alertes/Alertes";
-import Map from "./Components/Map/Map";
-import RotorSpeed from "./Components/RotorSpeed/RotorSpeed";
-import ExteriorTemperature from "./Components/ExteriorTemperature/ExteriorTemperature";
-import { Canvas } from "@react-three/fiber";
-import Model from "./Components/Model";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import ActivePower from "./Pages/ActivePower/ActivePower"
+import RotorSpeed from "./Pages/RotorSpeed/RotorSpeed"
 
 function App() {
 	return (
@@ -24,23 +18,22 @@ function App() {
 				alt="page background"
 				className="backgroundnet"
 			></img>
-			<div className="colone side left">
-				<ActivePower />
-				<RotorSpeed />
-				<TurbineTemperature />
-				<Alertes />
-			</div>
-			<div className="colone mid">
-				<Canvas className="canv" camera={{ position: [0, 5, 20] }}>
-					<Model />
-				</Canvas>
-			</div>
-			<div className="colone side right">
-				<NoteManager />
-				<Map />
-				<WindSpeed />
-				<ExteriorTemperature />
-			</div>
+			<Router>
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route exact path="/active_power">
+						<ActivePower />
+					</Route>
+					<Route exact path="/rotor_speed">
+						<RotorSpeed />
+					</Route>
+					<Route>
+						<Home />
+					</Route>
+				</Switch>
+			</Router>
 		</div>
 	);
 }

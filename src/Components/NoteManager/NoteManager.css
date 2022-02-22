@@ -5,9 +5,6 @@
 	color: white;
 	border-radius: 40px;
 	overflow: hidden;
-}
-
-.titre2 {
 	display: block;
 	text-align: start;
 }
@@ -15,13 +12,18 @@
 .notetitre {
 	border-bottom: 1px solid white;
 	width: 120%;
-	padding: 15px;
+	padding: 15px 25px;
 }
 
-.notes ul {
-	padding: 15px;
-	padding-left: 25px;
+.notes {
+	padding: 15px 35px;
 }
 
-ul {
+.index4 {
+	list-style: url("../../images/Dotred.svg");
+	color: var(--color-red);
+}
+
+.index3 {
+	list-style: url("../../images/Dotorange.svg");
 }

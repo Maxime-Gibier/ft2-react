@@ -1,0 +1,36 @@
+.home {
+	display: flex;
+}
+
+.colone {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.side {
+	width: 27vw;
+}
+
+.mid {
+	width: 46vw;
+}
+
+.left {
+	align-items: flex-end;
+}
+
+.right {
+	align-items: flex-start;
+}
+
+.canv {
+	height: 100vh !important;
+	z-index: 100;
+}
+
+* {
+	text-decoration: none !important;
+}
