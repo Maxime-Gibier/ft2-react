@@ -21,13 +21,6 @@ const draw_wind = (props) => {
 	});
 };
 
-[
-	{
-		zizi: "25cm",
-		bras: "45cm",
-	},
-];
-
 const BarChartWind = (props) => {
 	useEffect(() => {
 		draw_wind(props);
